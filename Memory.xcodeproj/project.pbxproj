@@ -19,6 +19,7 @@
 		11095BC018CA35DD008ECC98 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11095BA818CA35DD008ECC98 /* UIKit.framework */; };
 		11095BC818CA35DD008ECC98 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 11095BC618CA35DD008ECC98 /* InfoPlist.strings */; };
 		11095BCA18CA35DD008ECC98 /* MemoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11095BC918CA35DD008ECC98 /* MemoryTests.m */; };
+		11095BD418CA36E0008ECC98 /* firstView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11095BD318CA36E0008ECC98 /* firstView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,13 @@
 		11095BC518CA35DD008ECC98 /* MemoryTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MemoryTests-Info.plist"; sourceTree = "<group>"; };
 		11095BC718CA35DD008ECC98 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		11095BC918CA35DD008ECC98 /* MemoryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoryTests.m; sourceTree = "<group>"; };
+		11095BD318CA36E0008ECC98 /* firstView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = firstView.xib; sourceTree = "<group>"; };
+		11095BD518CA5206008ECC98 /* brain120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = brain120.png; path = ../../brain120.png; sourceTree = "<group>"; };
+		11095BD618CA521E008ECC98 /* brain80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = brain80.png; path = ../brain80.png; sourceTree = "<group>"; };
+		11095BD718CA5230008ECC98 /* brain120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = brain120.png; path = ../brain120.png; sourceTree = "<group>"; };
+		11095BD818CA5243008ECC98 /* brain58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = brain58.png; path = ../brain58.png; sourceTree = "<group>"; };
+		11095BD918CA5449008ECC98 /* brain640x960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = brain640x960.png; path = ../brain640x960.png; sourceTree = "<group>"; };
+		11095BDA18CA54F3008ECC98 /* brain640x1136.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = brain640x1136.png; path = ../brain640x1136.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				11095BB318CA35DD008ECC98 /* AppDelegate.h */,
+				11095BD318CA36E0008ECC98 /* firstView.xib */,
 				11095BB418CA35DD008ECC98 /* AppDelegate.m */,
 				11095BB618CA35DD008ECC98 /* Images.xcassets */,
 				11095BAB18CA35DD008ECC98 /* Supporting Files */,
@@ -118,6 +127,12 @@
 		11095BAB18CA35DD008ECC98 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				11095BDA18CA54F3008ECC98 /* brain640x1136.png */,
+				11095BD918CA5449008ECC98 /* brain640x960.png */,
+				11095BD818CA5243008ECC98 /* brain58.png */,
+				11095BD718CA5230008ECC98 /* brain120.png */,
+				11095BD618CA521E008ECC98 /* brain80.png */,
+				11095BD518CA5206008ECC98 /* brain120.png */,
 				11095BAC18CA35DD008ECC98 /* Memory-Info.plist */,
 				11095BAD18CA35DD008ECC98 /* InfoPlist.strings */,
 				11095BB018CA35DD008ECC98 /* main.m */,
@@ -221,6 +236,7 @@
 			files = (
 				11095BAF18CA35DD008ECC98 /* InfoPlist.strings in Resources */,
 				11095BB718CA35DD008ECC98 /* Images.xcassets in Resources */,
+				11095BD418CA36E0008ECC98 /* firstView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,8 +373,6 @@
 		11095BCE18CA35DD008ECC98 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Memory/Memory-Prefix.pch";
 				INFOPLIST_FILE = "Memory/Memory-Info.plist";
@@ -370,8 +384,6 @@
 		11095BCF18CA35DD008ECC98 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Memory/Memory-Prefix.pch";
 				INFOPLIST_FILE = "Memory/Memory-Info.plist";
@@ -441,6 +453,7 @@
 				11095BCF18CA35DD008ECC98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		11095BD018CA35DD008ECC98 /* Build configuration list for PBXNativeTarget "MemoryTests" */ = {
 			isa = XCConfigurationList;
@@ -449,6 +462,7 @@
 				11095BD218CA35DD008ECC98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
