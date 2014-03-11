@@ -20,6 +20,10 @@
 		11095BC818CA35DD008ECC98 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 11095BC618CA35DD008ECC98 /* InfoPlist.strings */; };
 		11095BCA18CA35DD008ECC98 /* MemoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11095BC918CA35DD008ECC98 /* MemoryTests.m */; };
 		11095BD418CA36E0008ECC98 /* firstView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11095BD318CA36E0008ECC98 /* firstView.xib */; };
+		11095BDF18CF7E6E008ECC98 /* CompromissoC.m in Sources */ = {isa = PBXBuildFile; fileRef = 11095BDC18CF7E6E008ECC98 /* CompromissoC.m */; };
+		11095BE018CF7E6E008ECC98 /* CompromissoCShared.m in Sources */ = {isa = PBXBuildFile; fileRef = 11095BDE18CF7E6E008ECC98 /* CompromissoCShared.m */; };
+		11095BE318CF8B82008ECC98 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11095BE218CF8B82008ECC98 /* ViewController.m */; };
+		11095BE518CF9169008ECC98 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11095BE418CF9169008ECC98 /* HeaderView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +60,13 @@
 		11095BD818CA5243008ECC98 /* brain58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = brain58.png; path = ../brain58.png; sourceTree = "<group>"; };
 		11095BD918CA5449008ECC98 /* brain640x960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = brain640x960.png; path = ../brain640x960.png; sourceTree = "<group>"; };
 		11095BDA18CA54F3008ECC98 /* brain640x1136.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = brain640x1136.png; path = ../brain640x1136.png; sourceTree = "<group>"; };
+		11095BDB18CF7E6E008ECC98 /* CompromissoC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompromissoC.h; sourceTree = "<group>"; };
+		11095BDC18CF7E6E008ECC98 /* CompromissoC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompromissoC.m; sourceTree = "<group>"; };
+		11095BDD18CF7E6E008ECC98 /* CompromissoCShared.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompromissoCShared.h; sourceTree = "<group>"; };
+		11095BDE18CF7E6E008ECC98 /* CompromissoCShared.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompromissoCShared.m; sourceTree = "<group>"; };
+		11095BE118CF8B82008ECC98 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		11095BE218CF8B82008ECC98 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		11095BE418CF9169008ECC98 /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,8 +127,15 @@
 			isa = PBXGroup;
 			children = (
 				11095BB318CA35DD008ECC98 /* AppDelegate.h */,
-				11095BD318CA36E0008ECC98 /* firstView.xib */,
 				11095BB418CA35DD008ECC98 /* AppDelegate.m */,
+				11095BDB18CF7E6E008ECC98 /* CompromissoC.h */,
+				11095BDC18CF7E6E008ECC98 /* CompromissoC.m */,
+				11095BDD18CF7E6E008ECC98 /* CompromissoCShared.h */,
+				11095BDE18CF7E6E008ECC98 /* CompromissoCShared.m */,
+				11095BD318CA36E0008ECC98 /* firstView.xib */,
+				11095BE418CF9169008ECC98 /* HeaderView.xib */,
+				11095BE118CF8B82008ECC98 /* ViewController.h */,
+				11095BE218CF8B82008ECC98 /* ViewController.m */,
 				11095BB618CA35DD008ECC98 /* Images.xcassets */,
 				11095BAB18CA35DD008ECC98 /* Supporting Files */,
 			);
@@ -237,6 +255,7 @@
 				11095BAF18CA35DD008ECC98 /* InfoPlist.strings in Resources */,
 				11095BB718CA35DD008ECC98 /* Images.xcassets in Resources */,
 				11095BD418CA36E0008ECC98 /* firstView.xib in Resources */,
+				11095BE518CF9169008ECC98 /* HeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,7 +275,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				11095BB518CA35DD008ECC98 /* AppDelegate.m in Sources */,
+				11095BDF18CF7E6E008ECC98 /* CompromissoC.m in Sources */,
+				11095BE018CF7E6E008ECC98 /* CompromissoCShared.m in Sources */,
 				11095BB118CA35DD008ECC98 /* main.m in Sources */,
+				11095BE318CF8B82008ECC98 /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
