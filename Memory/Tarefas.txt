@@ -1,0 +1,8 @@
+
+
+Fluxo do app
+    tela inicial (Gerenciador de Compromissos)
+        tela de consulta por proximidade do evento(Eventos por Data)
+        
+Tarefa
+    Substituir tela da tabela por tela inicial.

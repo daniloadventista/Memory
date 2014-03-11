@@ -14,24 +14,34 @@
             <rect key="frame" x="0.0" y="0.0" width="300" height="59"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Yd5-aD-h59">
-                    <rect key="frame" x="15" y="8" width="271" height="44"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                    <textInputTraits key="textInputTraits"/>
-                    <connections>
-                        <outlet property="delegate" destination="-1" id="Ccw-8J-fBZ"/>
-                    </connections>
-                </searchBar>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Header" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wcT-8B-ska">
+                    <rect key="frame" x="125" y="12" width="111" height="36"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="20"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="brain58.png" translatesAutoresizingMaskIntoConstraints="NO" id="EYQ-iJ-SxT">
+                    <rect key="frame" x="64" y="3" width="53" height="53"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="53" id="wBf-z5-VL5"/>
+                    </constraints>
+                </imageView>
             </subviews>
-            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="0.80000000000000004" green="1" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="Yd5-aD-h59" secondAttribute="trailing" constant="14" id="11V-MF-pe8"/>
-                <constraint firstItem="Yd5-aD-h59" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="15" id="Ejo-EV-AB4"/>
-                <constraint firstItem="Yd5-aD-h59" firstAttribute="top" secondItem="1" secondAttribute="top" constant="8" id="KZs-DV-Vfp"/>
-                <constraint firstItem="Yd5-aD-h59" firstAttribute="leading" relation="lessThanOrEqual" secondItem="1" secondAttribute="leading" constant="15" id="VSf-GI-dTw"/>
-                <constraint firstItem="Yd5-aD-h59" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="1" secondAttribute="leading" constant="8" id="kDC-Qw-8br"/>
-                <constraint firstAttribute="bottom" secondItem="Yd5-aD-h59" secondAttribute="bottom" constant="7" id="yZM-o3-JIw"/>
+                <constraint firstItem="EYQ-iJ-SxT" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="64" id="5A9-3B-VtO"/>
+                <constraint firstItem="EYQ-iJ-SxT" firstAttribute="centerY" secondItem="1" secondAttribute="centerY" id="8B4-Gf-6mQ"/>
+                <constraint firstItem="wcT-8B-ska" firstAttribute="leading" secondItem="EYQ-iJ-SxT" secondAttribute="trailing" constant="8" symbolic="YES" id="VSy-mG-Kpm"/>
+                <constraint firstAttribute="trailing" secondItem="wcT-8B-ska" secondAttribute="trailing" constant="64" id="Ycf-dH-qJW"/>
+                <constraint firstItem="wcT-8B-ska" firstAttribute="top" secondItem="1" secondAttribute="top" constant="12" id="fio-cP-jlS"/>
+                <constraint firstAttribute="bottom" secondItem="wcT-8B-ska" secondAttribute="bottom" constant="11" id="m28-Rf-yAw"/>
+                <constraint firstItem="EYQ-iJ-SxT" firstAttribute="top" secondItem="1" secondAttribute="top" constant="3" id="rfv-Lr-Nv4"/>
             </constraints>
         </view>
     </objects>
+    <resources>
+        <image name="brain58.png" width="58" height="58"/>
+    </resources>
 </document>

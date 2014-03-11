@@ -15,7 +15,6 @@
 @interface ViewController : UITableViewController<UITableViewDelegate,UITableViewDataSource,UITextFieldDelegate>{
     NSMutableArray *dados;
     NSMutableDictionary  *sections;
-    int  myRow;
 //    IBOutlet UILabel *lbStatus;
     IBOutlet UIView *headerView;
     VCCompromissoC* novoCompromissoC;
@@ -25,7 +24,6 @@
 
 @property NSMutableArray *dados;
 @property NSMutableDictionary  *sections;
-@property int  myRow;
 @property (nonatomic, strong) IBOutlet UIView *headerView;
 @property (nonatomic, strong) IBOutlet VCCompromissoC *novoCompromissoC;
 @property (nonatomic, strong) IBOutlet VCCompromissoCEditttt *CompromissoCEditando;
