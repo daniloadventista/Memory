@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  ViewController.h
 //  Memory
 //
 //  Created by Danilo Lira de Lima on 07/03/14.
@@ -7,27 +7,25 @@
 //
 
 #import <UIKit/UIKit.h>
-@class VCCompromissoC;
+@class RecordViewController;
 @class CompromissoCShared;
-@class VCCompromissoCEditttt;
-@class VCCompromissoCView;
+
 
 @interface ViewController : UITableViewController<UITableViewDelegate,UITableViewDataSource,UITextFieldDelegate>{
     NSMutableArray *dados;
     NSMutableDictionary  *sections;
 //    IBOutlet UILabel *lbStatus;
     IBOutlet UIView *headerView;
-    VCCompromissoC* novoCompromissoC;
+    RecordViewController * RVCNovaGravacao;
     CompromissoCShared * compromissoCShared;
     
+    
 }
+@property (nonatomic, strong) IBOutlet RecordViewController * RVCNovaGravacao;
 
 @property NSMutableArray *dados;
 @property NSMutableDictionary  *sections;
 @property (nonatomic, strong) IBOutlet UIView *headerView;
-@property (nonatomic, strong) IBOutlet VCCompromissoC *novoCompromissoC;
-@property (nonatomic, strong) IBOutlet VCCompromissoCEditttt *CompromissoCEditando;
-@property (nonatomic, strong) IBOutlet VCCompromissoCView *CompromissoCView;
 @property (nonatomic, strong) IBOutlet CompromissoCShared *CompromissoCShared;
 
 //- (void)removeErrados;

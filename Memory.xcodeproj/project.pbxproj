@@ -26,6 +26,9 @@
 		11095BE518CF9169008ECC98 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11095BE418CF9169008ECC98 /* HeaderView.xib */; };
 		11095BE818CF9531008ECC98 /* FuncoesDanilo.m in Sources */ = {isa = PBXBuildFile; fileRef = 11095BE718CF9531008ECC98 /* FuncoesDanilo.m */; };
 		11095C2718CF9837008ECC98 /* Tarefas.txt in Resources */ = {isa = PBXBuildFile; fileRef = 11095C2618CF9837008ECC98 /* Tarefas.txt */; };
+		11095C2B18CF9FB9008ECC98 /* RecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11095C2918CF9FB9008ECC98 /* RecordViewController.m */; };
+		11095C2C18CF9FB9008ECC98 /* RecordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11095C2A18CF9FB9008ECC98 /* RecordViewController.xib */; };
+		11095C2E18CFA091008ECC98 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11095C2D18CFA091008ECC98 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +75,10 @@
 		11095BE618CF9531008ECC98 /* FuncoesDanilo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FuncoesDanilo.h; sourceTree = "<group>"; };
 		11095BE718CF9531008ECC98 /* FuncoesDanilo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FuncoesDanilo.m; sourceTree = "<group>"; };
 		11095C2618CF9837008ECC98 /* Tarefas.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Tarefas.txt; sourceTree = "<group>"; };
+		11095C2818CF9FB9008ECC98 /* RecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordViewController.h; sourceTree = "<group>"; };
+		11095C2918CF9FB9008ECC98 /* RecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordViewController.m; sourceTree = "<group>"; };
+		11095C2A18CF9FB9008ECC98 /* RecordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecordViewController.xib; sourceTree = "<group>"; };
+		11095C2D18CFA091008ECC98 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11095C2E18CFA091008ECC98 /* AVFoundation.framework in Frameworks */,
 				11095BA718CA35DD008ECC98 /* CoreGraphics.framework in Frameworks */,
 				11095BA918CA35DD008ECC98 /* UIKit.framework in Frameworks */,
 				11095BA518CA35DD008ECC98 /* Foundation.framework in Frameworks */,
@@ -120,6 +128,7 @@
 		11095BA318CA35DD008ECC98 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				11095C2D18CFA091008ECC98 /* AVFoundation.framework */,
 				11095BA418CA35DD008ECC98 /* Foundation.framework */,
 				11095BA618CA35DD008ECC98 /* CoreGraphics.framework */,
 				11095BA818CA35DD008ECC98 /* UIKit.framework */,
@@ -141,6 +150,9 @@
 				11095BE418CF9169008ECC98 /* HeaderView.xib */,
 				11095BE118CF8B82008ECC98 /* ViewController.h */,
 				11095BE218CF8B82008ECC98 /* ViewController.m */,
+				11095C2A18CF9FB9008ECC98 /* RecordViewController.xib */,
+				11095C2818CF9FB9008ECC98 /* RecordViewController.h */,
+				11095C2918CF9FB9008ECC98 /* RecordViewController.m */,
 				11095BE618CF9531008ECC98 /* FuncoesDanilo.h */,
 				11095BE718CF9531008ECC98 /* FuncoesDanilo.m */,
 				11095C2618CF9837008ECC98 /* Tarefas.txt */,
@@ -265,6 +277,7 @@
 				11095BB718CA35DD008ECC98 /* Images.xcassets in Resources */,
 				11095BD418CA36E0008ECC98 /* firstView.xib in Resources */,
 				11095BE518CF9169008ECC98 /* HeaderView.xib in Resources */,
+				11095C2C18CF9FB9008ECC98 /* RecordViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +301,7 @@
 				11095BE018CF7E6E008ECC98 /* CompromissoCShared.m in Sources */,
 				11095BB118CA35DD008ECC98 /* main.m in Sources */,
 				11095BE318CF8B82008ECC98 /* ViewController.m in Sources */,
+				11095C2B18CF9FB9008ECC98 /* RecordViewController.m in Sources */,
 				11095BE818CF9531008ECC98 /* FuncoesDanilo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

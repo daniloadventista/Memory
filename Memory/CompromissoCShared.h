@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  CompromissoCShared.h
 //  Memory
 //
 //  Created by Danilo Lira de Lima on 07/03/14.

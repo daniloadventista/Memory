@@ -5,4 +5,5 @@ Fluxo do app
         tela de consulta por proximidade do evento(Eventos por Data)
         
 Tarefa
+    Implementar captura de Audio
     Substituir tela da tabela por tela inicial.

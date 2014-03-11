@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  ViewController.m
 //  Memory
 //
 //  Created by Danilo Lira de Lima on 07/03/14.
@@ -10,6 +10,7 @@
 #import "CompromissoC.h"
 #import "CompromissoCShared.h"
 #import "FuncoesDanilo.h"
+#import "RecordViewController.h"
 
 
 #pragma mark
@@ -19,7 +20,7 @@
 @end
 
 @implementation ViewController
-@synthesize novoCompromissoC,headerView,sections,dados, CompromissoCShared,CompromissoCView,CompromissoCEditando ;
+@synthesize headerView,sections,dados, CompromissoCShared, RVCNovaGravacao;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -37,6 +38,7 @@
     compromissoCShared = CompromissoCShared.defaultStore;
     
     dados = compromissoCShared.allItems;
+    RVCNovaGravacao = [[RecordViewController alloc ]initWithNibName:@"RecordViewController" bundle:nil];
     
     UIBarButtonItem *btnAdd = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addCompromissoC:)];
     self.navigationController.topViewController.navigationItem.rightBarButtonItem = btnAdd;
@@ -73,8 +75,8 @@
     
     CompromissoC *c ;
     
-    NSLog(@"indexPath row: %d", [indexPath row]);
-    NSLog(@"indexPath.section: %d", indexPath.section);
+    NSLog(@"indexPath row: %ld", (long)[indexPath row]);
+    NSLog(@"indexPath.section: %ld", (long)indexPath.section);
     
     c = [dados objectAtIndex:[indexPath row]];
     
@@ -84,7 +86,7 @@
     [[cell detailTextLabel] setFont:[UIFont systemFontOfSize:10.0]];
     [[cell detailTextLabel] setText:label];
     
-    NSLog(@"dados count: %d", [dados count]);
+    NSLog(@"dados count: %lu", (unsigned long)[dados count]);
     return cell;
 }
 - (UIView *)headerView
@@ -113,7 +115,11 @@
 }
 
 - (IBAction) addCompromissoC:(id)sender {
-
+    
+    self.navigationController.title = @"Nova Gravacao";
+    [self.navigationController
+    pushViewController:self.RVCNovaGravacao
+    animated:YES];
     NSLog(@"add");
 
 }
