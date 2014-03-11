@@ -44,6 +44,7 @@
     self.navigationController.topViewController.navigationItem.rightBarButtonItem = btnAdd;
     btnAdd.enabled=TRUE;
 //    btnReload.style=UIBarButtonSystemItemRefresh;
+    self.title = @"Compromissos";
     
 }
 
@@ -116,7 +117,7 @@
 
 - (IBAction) addCompromissoC:(id)sender {
     
-    self.navigationController.title = @"Nova Gravacao";
+    self.RVCNovaGravacao.title = @"Nova Gravacao";
     [self.navigationController
     pushViewController:self.RVCNovaGravacao
     animated:YES];
