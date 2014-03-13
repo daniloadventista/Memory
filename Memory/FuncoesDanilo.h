@@ -14,4 +14,5 @@
 }
 
 +(UIColor*)colorWithHexString:(NSString*)hex;
++(NSArray *)listFileAtPath:(NSString *)path;
 @end

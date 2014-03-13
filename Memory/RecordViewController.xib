@@ -6,6 +6,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RecordViewController">
             <connections>
+                <outlet property="playButton" destination="uCe-yg-ymh" id="qkS-pI-k6o"/>
+                <outlet property="recordButton" destination="mfd-DC-NCQ" id="4xt-ns-PfF"/>
+                <outlet property="saveDataButton" destination="Qpo-Kl-nDR" id="2gk-r0-KGW"/>
+                <outlet property="stopButton" destination="Dtd-9s-y7h" id="Obg-LU-vW9"/>
                 <outlet property="view" destination="1" id="3"/>
             </connections>
         </placeholder>
@@ -14,24 +18,34 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mfd-DC-NCQ">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mfd-DC-NCQ">
                     <rect key="frame" x="110" y="86" width="100" height="31"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="HM2-8y-G0b"/>
+                        <constraint firstAttribute="height" constant="31" id="OlU-Ef-j9n"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <state key="normal" title="Record">
                         <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="recordAudio:" destination="-1" eventType="touchUpInside" id="kwe-Ij-8rX"/>
+                    </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uCe-yg-ymh">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uCe-yg-ymh">
                     <rect key="frame" x="110" y="153" width="100" height="33"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <state key="normal" title="Play">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="playAudio:" destination="-1" eventType="touchUpInside" id="rts-Em-AyT"/>
+                    </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dtd-9s-y7h">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dtd-9s-y7h">
                     <rect key="frame" x="110" y="215" width="100" height="33"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -39,9 +53,37 @@
                         <color key="titleColor" red="1" green="0.80000000000000004" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="stopAudio:" destination="-1" eventType="touchUpInside" id="JFb-xY-MJD"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qpo-Kl-nDR">
+                    <rect key="frame" x="79" y="286" width="163" height="33"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="Input in Database">
+                        <color key="titleColor" red="1" green="0.80000000000000004" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="saveData:" destination="-1" eventType="touchUpInside" id="Uru-2M-UJP"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="uCe-yg-ymh" firstAttribute="trailing" secondItem="mfd-DC-NCQ" secondAttribute="trailing" id="6lg-i1-2V7"/>
+                <constraint firstItem="mfd-DC-NCQ" firstAttribute="leading" secondItem="uCe-yg-ymh" secondAttribute="leading" id="9DY-E0-Ozg"/>
+                <constraint firstItem="uCe-yg-ymh" firstAttribute="leading" secondItem="Dtd-9s-y7h" secondAttribute="leading" id="O9F-Py-xQx"/>
+                <constraint firstItem="mfd-DC-NCQ" firstAttribute="top" secondItem="1" secondAttribute="top" constant="86" id="Ou8-9k-Nwu"/>
+                <constraint firstItem="Qpo-Kl-nDR" firstAttribute="top" secondItem="Dtd-9s-y7h" secondAttribute="bottom" constant="38" id="YjY-Bp-orq"/>
+                <constraint firstItem="uCe-yg-ymh" firstAttribute="top" secondItem="mfd-DC-NCQ" secondAttribute="bottom" constant="36" id="aKE-dQ-X8E"/>
+                <constraint firstItem="Qpo-Kl-nDR" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="79" id="br9-75-RUz"/>
+                <constraint firstItem="Dtd-9s-y7h" firstAttribute="top" secondItem="uCe-yg-ymh" secondAttribute="bottom" constant="29" id="crN-ke-iqx"/>
+                <constraint firstItem="uCe-yg-ymh" firstAttribute="centerX" secondItem="1" secondAttribute="centerX" id="iEV-ce-0eO"/>
+                <constraint firstItem="Dtd-9s-y7h" firstAttribute="centerX" secondItem="Qpo-Kl-nDR" secondAttribute="centerX" id="mQ8-Ay-XSa"/>
+                <constraint firstItem="Dtd-9s-y7h" firstAttribute="trailing" secondItem="uCe-yg-ymh" secondAttribute="trailing" id="s8H-1a-RY7"/>
+            </constraints>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>

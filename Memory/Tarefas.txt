@@ -5,5 +5,8 @@ Fluxo do app
         tela de consulta por proximidade do evento(Eventos por Data)
         
 Tarefa
-    Implementar captura de Audio
+    Implementar captura de Audio - ok
+    Descobrir utilizar Sqllite - ok
+    Gravar Audio em disco
+    ler arquivos de audio
     Substituir tela da tabela por tela inicial.

@@ -9,7 +9,7 @@
 
 @implementation CompromissoC
 
-@synthesize anexos,dataCompromissoC,descricao,nome;
+@synthesize anexos,dataCompromissoC,dataCriacao,descricao,nome,mId;
 
 -(CompromissoC*) initWithAnexo:(NSObject *)obj
 {

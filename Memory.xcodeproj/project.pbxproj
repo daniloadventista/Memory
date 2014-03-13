@@ -29,6 +29,7 @@
 		11095C2B18CF9FB9008ECC98 /* RecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11095C2918CF9FB9008ECC98 /* RecordViewController.m */; };
 		11095C2C18CF9FB9008ECC98 /* RecordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11095C2A18CF9FB9008ECC98 /* RecordViewController.xib */; };
 		11095C2E18CFA091008ECC98 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11095C2D18CFA091008ECC98 /* AVFoundation.framework */; };
+		11095C7918D23CEB008ECC98 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 11095C7818D23CEB008ECC98 /* libsqlite3.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		11095C2918CF9FB9008ECC98 /* RecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordViewController.m; sourceTree = "<group>"; };
 		11095C2A18CF9FB9008ECC98 /* RecordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecordViewController.xib; sourceTree = "<group>"; };
 		11095C2D18CFA091008ECC98 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		11095C7818D23CEB008ECC98 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11095C7918D23CEB008ECC98 /* libsqlite3.dylib in Frameworks */,
 				11095C2E18CFA091008ECC98 /* AVFoundation.framework in Frameworks */,
 				11095BA718CA35DD008ECC98 /* CoreGraphics.framework in Frameworks */,
 				11095BA918CA35DD008ECC98 /* UIKit.framework in Frameworks */,
@@ -128,6 +131,7 @@
 		11095BA318CA35DD008ECC98 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				11095C7818D23CEB008ECC98 /* libsqlite3.dylib */,
 				11095C2D18CFA091008ECC98 /* AVFoundation.framework */,
 				11095BA418CA35DD008ECC98 /* Foundation.framework */,
 				11095BA618CA35DD008ECC98 /* CoreGraphics.framework */,
