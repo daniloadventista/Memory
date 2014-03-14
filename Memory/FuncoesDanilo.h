@@ -15,4 +15,6 @@
 
 +(UIColor*)colorWithHexString:(NSString*)hex;
 +(NSArray *)listFileAtPath:(NSString *)path;
++(NSArray *)listFileAtPath2;
++ (NSString *) dateString;
 @end

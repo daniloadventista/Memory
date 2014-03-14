@@ -21,7 +21,7 @@
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="brain58.png" translatesAutoresizingMaskIntoConstraints="NO" id="EYQ-iJ-SxT">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EYQ-iJ-SxT">
                     <rect key="frame" x="64" y="3" width="53" height="53"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <constraints>
@@ -41,7 +41,4 @@
             </constraints>
         </view>
     </objects>
-    <resources>
-        <image name="brain58.png" width="58" height="58"/>
-    </resources>
 </document>

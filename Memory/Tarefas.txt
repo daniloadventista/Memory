@@ -8,5 +8,6 @@ Tarefa
     Implementar captura de Audio - ok
     Descobrir utilizar Sqllite - ok
     Gravar Audio em disco
+        Audio to byte.
     ler arquivos de audio
     Substituir tela da tabela por tela inicial.

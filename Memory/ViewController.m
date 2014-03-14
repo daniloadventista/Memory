@@ -76,8 +76,8 @@
     
     CompromissoC *c ;
     
-    NSLog(@"indexPath row: %ld", (long)[indexPath row]);
-    NSLog(@"indexPath.section: %ld", (long)indexPath.section);
+//    NSLog(@"indexPath row: %ld", (long)[indexPath row]);
+//    NSLog(@"indexPath.section: %ld", (long)indexPath.section);
     
     c = [dados objectAtIndex:[indexPath row]];
     
@@ -87,7 +87,7 @@
     [[cell detailTextLabel] setFont:[UIFont systemFontOfSize:10.0]];
     [[cell detailTextLabel] setText:label];
     
-    NSLog(@"dados count: %lu", (unsigned long)[dados count]);
+//    NSLog(@"dados count: %lu", (unsigned long)[dados count]);
     return cell;
 }
 - (UIView *)headerView

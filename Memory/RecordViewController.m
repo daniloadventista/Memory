@@ -20,6 +20,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        self.view.layer.cornerRadius = 15;
     }
     return self;
 }
@@ -78,8 +79,11 @@
     docsDir = dirPaths[0];
     
     //iniciando gerenciador de audio
-    NSString *soundFilePath = [docsDir
-                               stringByAppendingPathComponent:@"sound.caf"];
+    NSString* data = [FuncoesDanilo dateString];
+    NSString *soundFilePath = [[docsDir
+                               stringByAppendingPathComponent:data] stringByAppendingString:@".caf"];
+    NSLog(@"soundFilePath %@", soundFilePath);
+    [FuncoesDanilo listFileAtPath: docsDir];
     
     NSURL *soundFileURL = [NSURL fileURLWithPath:soundFilePath];
     
@@ -147,6 +151,7 @@
     
     //ver files no path
     [FuncoesDanilo listFileAtPath:soundFilePath];
+    [FuncoesDanilo listFileAtPath:soundFilePath];
 }
 
 - (void)didReceiveMemoryWarning
@@ -209,11 +214,11 @@
     
 //    if (sqlite3_open(dbpath, &_contactDB) == SQLITE_OK)
 //    {
-////        "CREATE TABLE IF NOT EXISTS AVFAUDIOS (ID INTEGER PRIMARY KEY AUTOINCREMENT, AUDIO BLOB)";
+//        "CREATE TABLE IF NOT EXISTS AVFAUDIOS (ID INTEGER PRIMARY KEY AUTOINCREMENT, AUDIO BLOB)";
 //        NSString *insertSQL = [NSString stringWithFormat:
 //                               @"INSERT INTO AVFAUDIOS (audio) VALUES (\"%@\")
 //                               audio];
-//        
+//
 //        const char *insert_stmt = [insertSQL UTF8String];
 //        sqlite3_prepare_v2(_contactDB, insert_stmt,
 //                           -1, &statement, NULL);

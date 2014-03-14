@@ -75,5 +75,30 @@
     }
     return directoryContent;
 }
++(NSArray *)listFileAtPath2{
+    NSString *bundlePath = [[NSBundle mainBundle] resourcePath];
+    NSFileManager *mgr = [[NSFileManager alloc] init];
+
+    NSArray *allFiles = [mgr contentsOfDirectoryAtPath:bundlePath error:NULL];
+    for (NSString *fileName in allFiles)
+    {
+//        if ([[fileName pathExtension] isEqualToString:@"mp3"])
+//        {
+            NSString *fullFilePath = [bundlePath stringByAppendingPathComponent:fileName];
+            // fullFilePath now contains the path to your MP3 file
+//            DoSomethingWithFile(fullFilePath);
+            NSLog(@"fullFilePath: %@",fullFilePath);
+            NSLog(@"bundlePath: %@",bundlePath);
+//        }
+    }
+    return allFiles;
+}
++ (NSString *) dateString
+{
+    // return a formatted string
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    formatter.dateFormat = @"dd-MMM-YY_a_hh-mm-ss-SSS";
+    return [formatter stringFromDate:[NSDate date]];
+}
 
 @end
